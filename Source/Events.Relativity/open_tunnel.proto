@@ -1,0 +1,22 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Dolittle. All rights reserved.
+ *  Licensed under the MIT License. See LICENSE in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+syntax = "proto3";
+
+import "Events.Relativity/artifact.proto";
+import "Events.Relativity/tenant_offset.proto";
+
+package dolittle.events.microservice.relativity;
+
+option csharp_namespace = "Dolittle.Events.Microservice.Relativity";
+
+// Open tunnel is the message sent when opening a tunnel from a singularity towards an event horizon
+message OpenTunnel {
+    bytes application = 1;
+    bytes boundedContext = 2;
+    bytes clientId = 3;
+    repeated TenantOffset offsets = 4;
+    repeated Artifact events = 5;
+}

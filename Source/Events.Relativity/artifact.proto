@@ -1,0 +1,16 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Dolittle. All rights reserved.
+ *  Licensed under the MIT License. See LICENSE in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+syntax = "proto3";
+
+package dolittle.events.microservice.relativity;
+
+option csharp_namespace = "Dolittle.Events.Microservice.Relativity";
+
+// Represents the artifact
+message Artifact {
+    bytes id = 1;
+    int32 generation = 2;
+}

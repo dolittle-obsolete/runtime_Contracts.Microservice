@@ -1,0 +1,24 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Dolittle. All rights reserved.
+ *  Licensed under the MIT License. See LICENSE in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+syntax = "proto3";
+
+import "Events.Relativity/artifact.proto";
+import "Events.Relativity/versioned_event_source.proto";
+import "Events.Relativity/original_context.proto";
+
+package dolittle.events.microservice.relativity;
+
+option csharp_namespace = "Dolittle.Events.Microservice.Relativity";
+
+// Represents the metadata related to an event
+message EventMetadata {
+    bytes eventId = 1;
+    VersionedEventSource source = 2;
+    bytes correlationId = 3;
+    Artifact artifact = 4;
+    int64 occurred = 5;
+    OriginalContext originalContext = 6;
+}

@@ -1,0 +1,19 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Dolittle. All rights reserved.
+ *  Licensed under the MIT License. See LICENSE in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+syntax = "proto3";
+
+import "Events.Relativity/committed_event_stream.proto";
+import "Events.Relativity/execution_context.proto";
+
+package dolittle.events.microservice.relativity;
+
+option csharp_namespace = "Dolittle.Events.Microservice.Relativity";
+
+// Represents a committed event stream with the Execution Context
+message CommittedEventStreamWithContext {
+    CommittedEventStream commit = 1;
+    ExecutionContext context = 2;
+}

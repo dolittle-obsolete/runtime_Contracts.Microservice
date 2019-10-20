@@ -1,0 +1,18 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Dolittle. All rights reserved.
+ *  Licensed under the MIT License. See LICENSE in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+syntax = "proto3";
+
+import "Events.Relativity/event_source_version.proto";
+
+package dolittle.events.microservice.relativity;
+
+option csharp_namespace = "Dolittle.Events.Microservice.Relativity";
+
+// Represents a versioned event source
+message VersionedEventSource {
+    EventSourceVersion   version = 1;
+    bytes eventSource = 2;
+    bytes artifact = 3;
+}
