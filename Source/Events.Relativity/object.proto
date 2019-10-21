@@ -5,9 +5,9 @@
 
 syntax = "proto3";
 
-package dolittle;
+package dolittle.events.relativity.microservice;
 
-option csharp_namespace = "Dolittle";
+option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents an object with type information
 message Object {

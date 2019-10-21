@@ -4,9 +4,9 @@
  *--------------------------------------------------------------------------------------------*/
 syntax = "proto3";
 
-package dolittle.events.microservice.relativity;
+package dolittle.events.relativity.microservice;
 
-option csharp_namespace = "Dolittle.Events.Microservice.Relativity";
+option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents the artifact
 message Artifact {

@@ -6,9 +6,9 @@ syntax = "proto3";
 
 import "Events.Relativity/claim.proto";
 
-package dolittle.events.microservice.relativity;
+package dolittle.events.relativity.microservice;
 
-option csharp_namespace = "Dolittle.Events.Microservice.Relativity";
+option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents the execution context
 message ExecutionContext {

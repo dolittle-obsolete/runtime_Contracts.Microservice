@@ -4,11 +4,11 @@
  *--------------------------------------------------------------------------------------------*/
 syntax = "proto3";
 
-package dolittle;
-
 import "Events.Relativity/object.proto";
 
-option csharp_namespace = "Dolittle";
+package dolittle.events.relativity.microservice;
+
+option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 message Value {
   // The kind of value.

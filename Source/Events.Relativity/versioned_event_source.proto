@@ -6,9 +6,9 @@ syntax = "proto3";
 
 import "Events.Relativity/event_source_version.proto";
 
-package dolittle.events.microservice.relativity;
+package dolittle.events.relativity.microservice;
 
-option csharp_namespace = "Dolittle.Events.Microservice.Relativity";
+option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents a versioned event source
 message VersionedEventSource {

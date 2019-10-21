@@ -8,9 +8,9 @@ syntax = "proto3";
 import "Events.Relativity/open_tunnel.proto";
 import "Events.Relativity/committed_event_stream_with_context.proto";
 
-package dolittle.events.microservice.relativity;
+package dolittle.events.relativity.microservice;
 
-option csharp_namespace = "Dolittle.Events.Microservice.Relativity";
+option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents the service for working with quantum tunnel
 service QuantumTunnelService {

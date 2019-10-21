@@ -9,9 +9,9 @@ import "Events.Relativity/artifact.proto";
 import "Events.Relativity/versioned_event_source.proto";
 import "Events.Relativity/original_context.proto";
 
-package dolittle.events.microservice.relativity;
+package dolittle.events.relativity.microservice;
 
-option csharp_namespace = "Dolittle.Events.Microservice.Relativity";
+option csharp_namespace = "Dolittle.Events.Relativity.Microservice";
 
 // Represents the metadata related to an event
 message EventMetadata {
